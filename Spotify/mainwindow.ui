@@ -1,0 +1,118 @@
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>200</height>
+   </rect>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #f0f0f0;</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="buttonLayout">
+      <item>
+       <widget class="QPushButton" name="playButton">
+        <property name="text">
+         <string>Play</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    border-radius: 25px; /* make button circular */
+    background-color: #4CAF50; /* green */
+    color: white; /* text color */
+    padding: 10px 20px; /* adjust padding for better appearance */
+}
+
+QPushButton:hover {
+    background-color: #45a049; /* darker green on hover */
+}
+
+QPushButton:pressed {
+    background-color: #367c3a; /* even darker green when pressed */
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pauseButton">
+        <property name="text">
+         <string>Pause</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    border-radius: 25px; /* make button circular */
+    background-color: #f44336; /* red */
+    color: white; /* text color */
+    padding: 10px 20px; /* adjust padding for better appearance */
+}
+
+QPushButton:hover {
+    background-color: #d32f2f; /* darker red on hover */
+}
+
+QPushButton:pressed {
+    background-color: #b71c1c; /* even darker red when pressed */
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="stopButton">
+        <property name="text">
+         <string>Stop</string>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    border-radius: 25px; /* make button circular */
+    background-color: #2196F3; /* blue */
+    color: white; /* text color */
+    padding: 10px 20px; /* adjust padding for better appearance */
+}
+
+QPushButton:hover {
+    background-color: #1e88e5; /* darker blue on hover */
+}
+
+QPushButton:pressed {
+    background-color: #1976d2; /* even darker blue when pressed */
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QSlider" name="volumeSlider">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>30</height>
+       </size>
+      </property>
+      <property name="value">
+       <number>50</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
+
